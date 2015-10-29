@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Danske Postnumre</title>
-  <style type="text/css">
-    body, input {
-      font-family: "Helvetica";
-      font-size: 20px;
-    }
-    form {
-      width: 370px;
-      position: absolute;
-      left: calc(50% - 185px);
-      top: calc(50% - 10px);
-    }
-    .form-input {
-      float: left;
-      margin-right: 10px;
-      padding: 7px 10px 7px 10px;
-      border-radius: 5px;
-      border: 2px solid #999;
-    }
-    .postnr { width: 70px;}
-    .by { width: 230px; }
-  </style>
-</head>
-<body>
+  <head>
+    <title>Danske Postnumre</title>
+    <style type="text/css">
+      body, input {
+        font-family: "Helvetica";
+        font-size: 20px;
+      }
+      form {
+        width: 370px;
+        position: absolute;
+        left: calc(50% - 185px);
+        top: calc(50% - 10px);
+      }
+      .form-input {
+        float: left;
+        margin-right: 10px;
+        padding: 7px 10px 7px 10px;
+        border-radius: 5px;
+        border: 2px solid #999;
+      }
+      .postnr { width: 70px;}
+      .by { width: 230px; }
+    </style>
+  </head>
 
-  <form>
-    <input id="postnr" class="form-input postnr" type="text" placeholder="Postnr." />
-    <input id="by" class="form-input by" type="text" placeholder="By" />
-  </form>
+  <body>
+  
+    <form>
+      <input id="postnr" class="form-input postnr" type="text" placeholder="Postnr." />
+      <input id="by" class="form-input by" type="text" placeholder="By" />
+    </form>
+  
+    <script type="text/javascript" src="danskepostnumre.js"></script>
+    <script type="text/javascript">
+      var postnr = document.getElementById('postnr'),
+          bynavn = document.getElementById('by');
+      danskepostnumre.link(postnr, bynavn);
+    </script>
+  
+  </body>
 
-  <script type="text/javascript" src="danskepostnumre.js"></script>
-  <script type="text/javascript">
-    var postnr = document.getElementById('postnr'),
-        bynavn = document.getElementById('by');
-    danskepostnumre.link(postnr, bynavn);
-  </script>
-
-</body>
 </html>
