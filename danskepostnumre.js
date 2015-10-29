@@ -5,7 +5,7 @@
 
   dp.handleData = function (data) {
     for (var i = 0; i < data.length; i++) {
-      postCodes[data[i].postnr] = data[i].navn;
+      postCodes[data[i].nr] = data[i].navn;
     }
   };
 
@@ -25,7 +25,7 @@
   // Bootstrap
   (function(){
     var script = document.createElement('script');
-    script.src = 'http://postnumre.oiorest.dk/postnumre/?callback=danskepostnumre.handleData';
+    script.src = 'http://dawa.aws.dk/postnumre?callback=danskepostnumre.handleData';
     document.getElementsByTagName('head')[0].appendChild(script);
   }());
 
