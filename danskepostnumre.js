@@ -7,7 +7,6 @@
     for (var i = 0; i < data.length; i++) {
       postCodes[data[i].postnr] = data[i].navn;
     }
-    console.log('done');
   };
 
   dp.link = function (postCodeField, cityNameField) {
