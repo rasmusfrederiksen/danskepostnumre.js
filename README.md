@@ -9,4 +9,4 @@ The `link` function deals with the most common scenario when dealing with postco
 
 The `convert` function is what it says on the tin – you give it a postal code and it returns the postal area name.
 
-The data from the Danish Geodata Agency is about 15 Kb gzip'd. I'll leave it to you to minify the script if you must – it's less than 1Kb uncompressed.
+The data from the Danish Geodata Agency is about 7.5 Kb over the wire. I'll leave it to you to minify the script if you must – it's less than a kilobyte uncompressed.
