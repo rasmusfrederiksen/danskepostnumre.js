@@ -25,7 +25,7 @@
   // Bootstrap
   (function(){
     var script = document.createElement('script');
-    script.src = 'http://dawa.aws.dk/postnumre?callback=danskepostnumre.handleData';
+    script.src = 'http://dawa.aws.dk/replikering/postnumre?callback=danskepostnumre.handleData';
     document.getElementsByTagName('head')[0].appendChild(script);
   }());
 
